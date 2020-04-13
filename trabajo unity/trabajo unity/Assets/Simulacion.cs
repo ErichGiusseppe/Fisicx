@@ -21,15 +21,21 @@ public class Simulacion : MonoBehaviour
     public InputField masa2;
     public void simular()
     {
-        GameObject copia = Instantiate(bolaCaucho);
-        copia.transform.position = new Vector3(float.Parse(posicionX1.text) , float.Parse(posicionY1.text), float.Parse(posicionZ1.text));
-        Rigidbody rigidBody = copia.GetComponent<Rigidbody>();
-        rigidBody.mass = float.Parse("1");
-        rigidBody.velocity = new Vector3(float.Parse(velocidadX1.text), float.Parse(velocidadY1.text), 0);
-        GameObject copia2 = Instantiate(bolaCaucho);
-        copia2.transform.position = new Vector3(float.Parse(posicionX2.text) , float.Parse(posicionY2.text), float.Parse(posicionZ2.text));
-        Rigidbody rigidBody2 = copia2.GetComponent<Rigidbody>();
-        rigidBody2.mass = float.Parse("1");
-        rigidBody2.velocity = new Vector3(float.Parse(velocidadX2.text), float.Parse(velocidadY2.text), 0);
+        if (posicionZ1.text != null && posicionZ1.text != "" && posicionX1.text != null && posicionX1.text != "" && posicionY1.text != null && posicionY1.text != "")
+        {
+            GameObject copia = Instantiate(bolaCaucho);
+            copia.transform.position = new Vector3(float.Parse(posicionX1.text), float.Parse(posicionY1.text), float.Parse(posicionZ1.text));
+            Rigidbody rigidBody = copia.GetComponent<Rigidbody>();
+            rigidBody.mass = float.Parse("1");
+            rigidBody.velocity = new Vector3(float.Parse(velocidadX1.text), float.Parse(velocidadY1.text), 0);
+        }
+        if(posicionZ2.text != null && posicionZ2.text != "" && posicionX2.text != null && posicionX2.text != "" && posicionY2.text != null && posicionY2.text != "")
+        {
+            GameObject copia2 = Instantiate(bolaCaucho);
+            copia2.transform.position = new Vector3(float.Parse(posicionX2.text), float.Parse(posicionY2.text), float.Parse(posicionZ2.text));
+            Rigidbody rigidBody2 = copia2.GetComponent<Rigidbody>();
+            rigidBody2.mass = float.Parse("1");
+            rigidBody2.velocity = new Vector3(float.Parse(velocidadX2.text), float.Parse(velocidadY2.text), 0);
+        }
     }
 }
