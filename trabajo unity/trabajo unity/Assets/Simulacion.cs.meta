@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: a18a25253cec2f048a050ed6029c61d9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bolaHierro: {fileID: 2329714761090122425, guid: 2689882c363f2384daa432937d4a75a8,
+      type: 3}
+  - bolaCaucho: {fileID: 1444526605484780318, guid: 8e05f57ebdf45c040bf6af15363e3e95,
+      type: 3}
+  - velocidadX1: {instanceID: 0}
+  - velocidadY1: {instanceID: 0}
+  - posicionX1: {instanceID: 0}
+  - posicionY1: {instanceID: 0}
+  - posicionZ1: {instanceID: 0}
+  - velocidadX2: {instanceID: 0}
+  - velocidadY2: {instanceID: 0}
+  - posicionX2: {instanceID: 0}
+  - posicionY2: {instanceID: 0}
+  - posicionZ2: {instanceID: 0}
+  - masa1: {instanceID: 0}
+  - masa2: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
