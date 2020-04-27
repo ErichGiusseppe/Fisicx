@@ -14,7 +14,6 @@ public class energia : MonoBehaviour
     public InputField gravedad;
     public InputField altura;
     public InputField velocidad;
-    public InputField emecanica;
     public InputField fuerzaroce;
     public InputField fuerzanormal;
     public InputField coeficienteroce;
@@ -97,6 +96,10 @@ public class energia : MonoBehaviour
             float fr = float.Parse(fuerzaroce.text);
             float operacion = fr / u;
             respuesta.text = operacion.ToString();
+        }
+        else
+        {
+            respuesta.text = "No hay suficientes datos para calcular alguna variable";
         }
     }
 }
