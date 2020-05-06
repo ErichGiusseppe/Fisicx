@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class creacion: MonoBehaviour
+public class creacion : MonoBehaviour
 {
-    public GameObject BolaHierro;
+    //Name Input Field
+
+    public GameObject BolaAcero;
     public GameObject BolaCaucho;
+    public GameObject BolaMadera;
+    public GameObject BolaVidrio;
+    public GameObject BolaPiedra;
     public InputField velocidadX1;
     public InputField velocidadY1;
     public InputField velocidadZ1;
@@ -23,36 +28,188 @@ public class creacion: MonoBehaviour
     public InputField masa2;
     public InputField Bola;
     public InputField Bola1;
-    public GameObject Flecha1;
-    public GameObject Flecha2;
+    public GameObject Flecha1x;
+    public GameObject Flecha2y;
+    public GameObject Flecha3z;
+    public Material Caucho;
+    public Material Acero;
+    public Material Vidrio;
+    public Material Piedra;
+    public Material Madera;
+    public Material Ceramica;
+    public Material Blanco;
+    public Material Verde;
+    public Material Azul;
+    public Material Rojo;
+    public string Bolas;
+    public string Bolas2;
+    public bool bola2 = false;
+    public bool bola1 = false;
 
 
     public void Objeto_statik()
     {
-        if ((ToLower(Bola.txt)) ==  ("BolaCaucho"));
-        {
-           GameObject copy_bolae_caucho = Instantiate(BolaCaucho);
-           copy_bolae_caucho.transform.position = new Vector3(float.Parse(posicionX1.txt), float.Parse(posicionY1.txt), float.Parse(posicionZ1.txt));
-           GameObject Flecha1_c = Instantiate(Flecha1);
-           Flecha1_c.transform.position = new Vector3(float.Parse(posicionX1.txt), float.Parse(posicionY1.txt), float.Parse(posicionZ1.txt));
-           Flecha1_c.transform.localScale = new Vector3(float.Parse(velocidadX1.txt), float.Parse(velocidadY1.txt), float.Parse(velocidadZ1));
-        }
-        if ((ToLower(Bola.txt)) == ("BolaHierro"));
-        {
-            GameObject copy_bolae_caucho = Instantiate(BolaHierro);
-            copy_bolae_caucho.transform.position = new Vector3(float.Parse(posicionX1.txt), float.Parse(posicionY1.txt), float.Parse(posicionZ1.txt));
-        }
-        if ((ToLower(Bola1.txt)) == ("BolaCaucho")) ;
+        Bolas = Bola.text;
+        Bolas2 = Bola1.text;
+        if ((Bolas.ToLower()) == ("caucho"))
         {
             GameObject copy_bolae_caucho = Instantiate(BolaCaucho);
-            copy_bolae_caucho.transform.position = new Vector3(float.Parse(posicionX1.txt), float.Parse(posicionY1.txt), float.Parse(posicionZ1.txt));
-
+            copy_bolae_caucho.transform.position = new Vector3(float.Parse(posicionX1.text), float.Parse(posicionY1.text), float.Parse(posicionZ1.text));
+            copy_bolae_caucho.GetComponent<Renderer>().material = Caucho;
+            bola1 = true;
         }
-        if ((ToLower(Bola1.txt)) == ("BolaHierro")) ;
+        if ((Bolas.ToLower()) == ("acero"))
         {
-            GameObject copy_bolae_caucho = Instantiate(BolaHierro);
-            copy_bolae_caucho.transform.position = new Vector3(float.Parse(posicionX1.txt), float.Parse(posicionY1.txt), float.Parse(posicionZ1.txt));
+            GameObject copy_bolaacero = Instantiate(BolaAcero);
+            copy_bolaacero.transform.position = new Vector3(float.Parse(posicionX1.text), float.Parse(posicionY1.text), float.Parse(posicionZ1.text));
+            copy_bolaacero.GetComponent<Renderer>().material = Acero;
+            bola1 = true;
+        }
+        if ((Bolas.ToLower()) == ("piedra"))
+        {
+            GameObject copy_bolapiedra = Instantiate(BolaPiedra);
+            copy_bolapiedra.transform.position = new Vector3(float.Parse(posicionX1.text), float.Parse(posicionY1.text), float.Parse(posicionZ1.text));
+            copy_bolapiedra.GetComponent<Renderer>().material = Acero;
+            bola1 = true;
+        }
+        if ((Bolas.ToLower()) == ("madera"))
+        {
+            GameObject copy_bolamadera = Instantiate(BolaMadera);
+            copy_bolamadera.transform.position = new Vector3(float.Parse(posicionX1.text), float.Parse(posicionY1.text), float.Parse(posicionZ1.text));
+            copy_bolamadera.GetComponent<Renderer>().material = Acero;
+            bola1 = true;
+        }
+        if ((Bolas.ToLower()) == ("vidrio"))
+        {
+            GameObject copy_bolavidrio = Instantiate(BolaVidrio);
+            copy_bolavidrio.transform.position = new Vector3(float.Parse(posicionX1.text), float.Parse(posicionY1.text), float.Parse(posicionZ1.text));
+            copy_bolavidrio.GetComponent<Renderer>().material = Acero;
+            bola1 = true;
+        }
+        if (((float.Parse(velocidadX1.text) != 0f)) && (bola1 == true))
+        {
+            GameObject Flecha1_c = Instantiate(Flecha1x);
+            Flecha1_c.transform.position = new Vector3(float.Parse(posicionX1.text) - 55f, float.Parse(posicionY1.text), (float.Parse(posicionZ1.text)) + 15f);
+
+            if (float.Parse(velocidadX1.text) > 0f)
+            {
+                Flecha1_c.transform.position = new Vector3(float.Parse(posicionX1.text) + 55f, float.Parse(posicionY1.text), (float.Parse(posicionZ1.text)) + 15f);
+                Flecha1_c.transform.Rotate(new Vector3(0f, 180f, 0f));
+            }
         }
 
+        if (((float.Parse(velocidadY1.text)) != 0f) && (bola1 == true))
+        {
+            GameObject Flecha2_c = Instantiate(Flecha2y);
+            if (float.Parse(velocidadY1.text) > 0f)
+            {
+                Flecha2_c.transform.position = new Vector3(float.Parse(posicionX1.text) - 25f, (float.Parse(posicionY1.text)) + 100f, (float.Parse(posicionZ1.text) - 10f));
+                Flecha2_c.transform.Rotate(new Vector3(0f, 90f, -90f));
+
+            }
+            if (float.Parse(velocidadY1.text) < 0f)
+            {
+                Flecha2_c.transform.position = new Vector3(float.Parse(posicionX1.text) - 35f, (float.Parse(posicionY1.text)) - 90f, (float.Parse(posicionZ1.text) - 10f));
+                Flecha2_c.transform.Rotate(new Vector3(0f, 90f, 90f));
+
+            }
+        }
+        if (((float.Parse(velocidadZ1.text)) != 0f) && (bola1 == true));
+        {
+            GameObject Flecha3_c = Instantiate(Flecha3z);
+
+            if (float.Parse(velocidadZ1.text) > 0f)
+            {
+                Flecha3_c.transform.position = new Vector3(float.Parse(posicionX1.text) - 30f, float.Parse(posicionY1.text), (float.Parse(posicionZ1.text)) + 70f);
+                Flecha3_c.transform.Rotate(new Vector3(0f, 90f, 0f));
+
+            }
+            if (float.Parse(velocidadZ1.text) < 0f)
+            {
+                Flecha3_c.transform.position = new Vector3(float.Parse(posicionX1.text) - 30f, float.Parse(posicionY1.text), (float.Parse(posicionZ1.text)) - 70f);
+                Flecha3_c.transform.Rotate(new Vector3(0f, -90f, 0f));
+
+            }
+
+        }
+        if ((Bolas2.ToLower()) == ("caucho"))
+        {
+            GameObject copy_bolae_caucho = Instantiate(BolaCaucho);
+            copy_bolae_caucho.transform.position = new Vector3(float.Parse(posicionX2.text), float.Parse(posicionY2.text), float.Parse(posicionZ2.text));
+            copy_bolae_caucho.GetComponent<Renderer>().material = Caucho;
+            bola2 = true;
+        }
+        if ((Bolas2.ToLower()) == ("acero"))
+        {
+            GameObject copy_bolaacero = Instantiate(BolaAcero);
+            copy_bolaacero.transform.position = new Vector3(float.Parse(posicionX2.text), float.Parse(posicionY2.text), float.Parse(posicionZ2.text));
+            copy_bolaacero.GetComponent<Renderer>().material = Acero;
+            bola2 = true;
+        }
+        if ((Bolas2.ToLower()) == ("piedra"))
+        {
+            GameObject copy_bolapiedra = Instantiate(BolaPiedra);
+            copy_bolapiedra.transform.position = new Vector3(float.Parse(posicionX2.text), float.Parse(posicionY2.text), float.Parse(posicionZ2.text));
+            copy_bolapiedra.GetComponent<Renderer>().material = Acero;
+            bola2 = true;
+        }
+        if ((Bolas2.ToLower()) == ("madera"))
+        {
+            GameObject copy_bolamadera = Instantiate(BolaMadera);
+            copy_bolamadera.transform.position = new Vector3(float.Parse(posicionX2.text), float.Parse(posicionY2.text), float.Parse(posicionZ2.text));
+            copy_bolamadera.GetComponent<Renderer>().material = Acero;
+            bola2 = true;
+        }
+        if ((Bolas2.ToLower()) == ("vidrio"))
+        {
+            GameObject copy_bolavidrio = Instantiate(BolaVidrio);
+            copy_bolavidrio.transform.position = new Vector3(float.Parse(posicionX2.text), float.Parse(posicionY2.text), float.Parse(posicionZ2.text));
+            copy_bolavidrio.GetComponent<Renderer>().material = Acero;
+            bola2 = true;
+        }
+        if (((float.Parse(velocidadX2.text)) != 0f)&&(bola2 == true))
+        {
+            GameObject Flecha1_c = Instantiate(Flecha1x);
+            Flecha1_c.transform.position = new Vector3(float.Parse(posicionX2.text) - 55f, float.Parse(posicionY2.text), (float.Parse(posicionZ2.text)) + 15f);
+
+            if (float.Parse(velocidadX2.text) > 0f)
+            {
+                Flecha1_c.transform.position = new Vector3(float.Parse(posicionX2.text) + 55f, float.Parse(posicionY2.text), (float.Parse(posicionZ2.text)) + 15f);
+                Flecha1_c.transform.Rotate(new Vector3(0f, 180f, 0f));
+            }
+        }
+
+        if (((float.Parse(velocidadY2.text)) != 0f) &&(bola2 == true))
+        {
+            GameObject Flecha2_c = Instantiate(Flecha2y);
+            if (float.Parse(velocidadY2.text) > 0f)
+            {
+                Flecha2_c.transform.position = new Vector3(float.Parse(posicionX2.text) - 35f, (float.Parse(posicionY2.text)) + 90f, (float.Parse(posicionZ2.text) - 10f));
+                Flecha2_c.transform.Rotate(new Vector3(0f, 90f, -90f));
+
+            }
+            if (float.Parse(velocidadY1.text) < 0f)
+            {
+                Flecha2_c.transform.position = new Vector3(float.Parse(posicionX2.text) - 35f, (float.Parse(posicionY2.text)) - 90f, (float.Parse(posicionZ2.text) - 10f));
+                Flecha2_c.transform.Rotate(new Vector3(0f, 90f, 90f));
+
+            }
+        }
+        if (((float.Parse(velocidadZ2.text)) != 0f)&&(bola2 == true))
+        {
+            GameObject Flecha3_c = Instantiate(Flecha3z);
+            if (float.Parse(velocidadZ2.text) > 0f)
+            {
+                Flecha3_c.transform.position = new Vector3(float.Parse(posicionX2.text) - 30f, float.Parse(posicionY2.text), (float.Parse(posicionZ2.text)) + 70f);
+                Flecha3_c.transform.Rotate(new Vector3(0f, 90f, 0f));
+
+            }
+            if (float.Parse(velocidadZ1.text) < 0f)
+            {
+                Flecha3_c.transform.position = new Vector3(float.Parse(posicionX2.text) - 30f, float.Parse(posicionY2.text), (float.Parse(posicionZ2.text)) - 70f);
+                Flecha3_c.transform.Rotate(new Vector3(0f, -90f, 0f));
+
+            }
+        }
     }
 }
