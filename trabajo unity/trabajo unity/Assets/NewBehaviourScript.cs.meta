@@ -3,7 +3,46 @@ guid: 881d89a13f13331489107fd6498c0668
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - BolaAceromov: {fileID: 2648635307655137750, guid: af3eb623fefffac4a8e2a228bb630642,
+      type: 3}
+  - BolaCauchomov: {fileID: 4354728738373560228, guid: ba8b236f8ef46e44e844c84cb1493d76,
+      type: 3}
+  - BolaMaderamov: {fileID: 2880637458408694542, guid: 921c386ddd7fe6946877438124548129,
+      type: 3}
+  - BolaVidriomov: {fileID: 5096508888359805017, guid: 915f1ee28b478cd48a8fe93a48befa6f,
+      type: 3}
+  - BolaPiedramov: {fileID: 3832574249477525889, guid: 1ca00a141d2931e41a37ac15e92ab383,
+      type: 3}
+  - velocidadX1: {instanceID: 0}
+  - velocidadY1: {instanceID: 0}
+  - velocidadZ1: {instanceID: 0}
+  - posicionX1: {instanceID: 0}
+  - posicionY1: {instanceID: 0}
+  - posicionZ1: {instanceID: 0}
+  - velocidadX2: {instanceID: 0}
+  - velocidadY2: {instanceID: 0}
+  - velocidadZ2: {instanceID: 0}
+  - posicionX2: {instanceID: 0}
+  - posicionY2: {instanceID: 0}
+  - posicionZ2: {instanceID: 0}
+  - masa1: {instanceID: 0}
+  - masa2: {instanceID: 0}
+  - Bola: {instanceID: 0}
+  - Bola1: {instanceID: 0}
+  - Flecha1x: {instanceID: 0}
+  - Flecha2y: {instanceID: 0}
+  - Flecha3z: {instanceID: 0}
+  - Caucho: {instanceID: 0}
+  - Acero: {instanceID: 0}
+  - Vidrio: {instanceID: 0}
+  - Piedra: {instanceID: 0}
+  - Madera: {instanceID: 0}
+  - Ceramica: {instanceID: 0}
+  - Blanco: {instanceID: 0}
+  - Verde: {instanceID: 0}
+  - Azul: {instanceID: 0}
+  - Rojo: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
