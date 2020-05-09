@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Textodenop : MonoBehaviour
 {
+    public float Tiempodevida = 2;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,11 @@ public class Textodenop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Tiempodevida -= Time.deltaTime;
+        if (Tiempodevida <= 0)
+        {
+            Destroy(this.gameObject);
+        }
         
     }
 }

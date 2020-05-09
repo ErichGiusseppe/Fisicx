@@ -49,6 +49,29 @@ public class creacion : MonoBehaviour
 
     public void Objeto_statik()
     {
+        float valor_en_X1 = (float.Parse(posicionX1.text))+ 3326f;
+        float valor_en_X2 = (float.Parse(posicionX2.text))+ 3326f;
+        float valor_en_Y1 = (float.Parse(posicionY1.text));
+        float valor_en_Y2 = (float.Parse(posicionY2.text));
+        float valor_en_Z1 = (float.Parse(posicionZ1.text)) -613f;
+        float valor_en_Z2 = (float.Parse(posicionZ2.text)) -613f;
+        if (valor_en_X1 > 7133f)
+        {
+            valor_en_X1 = 7133f;
+        }
+        if (valor_en_X1 < 3426f)
+        {
+            valor_en_X1 = 3426f;
+        }
+        if (valor_en_X2 > 7133f)
+        {
+            valor_en_X2 = 7133f;
+        }
+        if (valor_en_X2 < 3426f)
+        {
+            valor_en_X2 = 3426f;
+        }
+
         Bolas = Bola.text;
         Bolas2 = Bola1.text;
         if ((Bolas.ToLower()) == ("caucho"))
