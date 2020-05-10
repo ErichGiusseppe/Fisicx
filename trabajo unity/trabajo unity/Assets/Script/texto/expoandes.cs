@@ -8,6 +8,7 @@ public class expoandes : MonoBehaviour
 {
 
     public Text respuesta;
+    public Text ecuacion;
     public InputField graveda;
     public InputField velocidadinicial;
     public InputField velocidadfinal;
@@ -23,7 +24,8 @@ public class expoandes : MonoBehaviour
             float Tiempo = float.Parse(tiempo.text);
 
             float operacion = VelocidadInicial + (Gravedad * Tiempo);
-            respuesta.text = operacion.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:Vi+(g*t)";
+            respuesta.text = "velocidad final= "+operacion.ToString();
         }
         else if (velocidadfinal.text == "" && velocidadinicial.text != "" && graveda.text != "" && posiciony.text != "")
         {
@@ -31,7 +33,8 @@ public class expoandes : MonoBehaviour
             float gravedad = float.Parse(graveda.text);
             float y = float.Parse(posiciony.text);
             double result = Math.Sqrt(Math.Pow(velocidad_inicial, 2) + ((2 * gravedad) * y));
-            respuesta.text = result.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:(√v^2)+((2*g)*y)"; 
+            respuesta.text ="velocidad final= " +result.ToString();
         }
         else if (velocidadfinal.text == "" && velocidadinicial.text != "" && posiciony.text != "" && tiempo.text != "")
         {
@@ -39,7 +42,8 @@ public class expoandes : MonoBehaviour
             float y = float.Parse(posiciony.text);
             float Tiempo = float.Parse(tiempo.text);
             double res = ((y * 2) / Tiempo) - velocidad_inicial;
-            respuesta.text = res.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:((y*2)/t)-Vi";
+            respuesta.text = "velocidad final= "+res.ToString();
         }
         else if (velocidadinicial.text == "" && velocidadfinal.text != "" && graveda.text != "" && tiempo.text != "")
         {
@@ -47,7 +51,8 @@ public class expoandes : MonoBehaviour
             float gravedad = float.Parse(graveda.text);
             float Tiempo = float.Parse(tiempo.text);
             float respuestas = velocidad_final / (gravedad * Tiempo);
-            respuesta.text = respuestas.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:Vf/(g*t)";
+            respuesta.text ="velocidad inicial= "+ respuestas.ToString();
 
         }
         else if (velocidadinicial.text == "" && graveda.text != "" && tiempo.text != "" && posiciony.text != "")
@@ -56,7 +61,8 @@ public class expoandes : MonoBehaviour
             float Tiempo = float.Parse(tiempo.text);
             float y = float.Parse(posiciony.text);
             double respuestas = (y - (((1 / 2) * gravedad) * Math.Pow(Tiempo, 2))) / Tiempo;
-            respuesta.text = respuestas.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:(y-(((1/2)*g)*(t^2/t)";
+            respuesta.text = "velocidad inicial= "+respuestas.ToString();
         }
         else if (velocidadinicial.text == "" && velocidadfinal.text != "" && posiciony.text != "" && graveda.text != "")
         {
@@ -64,7 +70,8 @@ public class expoandes : MonoBehaviour
             float y = float.Parse(posiciony.text);
             float gravedad = float.Parse(graveda.text);
             double respuestas = Math.Sqrt(velocidad_final - ((2 * gravedad) * y));
-            respuesta.text = respuestas.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:√(Vf-((2*g)*y)";
+            respuesta.text ="velocidad inicial= " + respuestas.ToString();
         }
         else if (velocidadinicial.text == "" && velocidadfinal.text != "" && posiciony.text != "" && tiempo.text != "")
         {
@@ -73,7 +80,8 @@ public class expoandes : MonoBehaviour
             float Tiempo = float.Parse(tiempo.text);
 
             double respuestas = ((y * 2) / Tiempo) - velocidad_final;
-            respuesta.text = respuestas.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:((2*y)/t)-Vf";
+            respuesta.text ="velocidad inicial= " +respuestas.ToString();
 
         }
         else if (graveda.text != "" && velocidadfinal.text != "" && velocidadinicial.text != "" && tiempo.text != "")
@@ -82,7 +90,8 @@ public class expoandes : MonoBehaviour
             float velocidad_inicial = float.Parse(velocidadinicial.text);
             float tiempos = float.Parse(tiempo.text);
             float respuestas = (velocidad_final - velocidad_inicial) / tiempos;
-            respuesta.text = respuestas.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:(Vf-Vi)/t";
+            respuesta.text = "gravedad= "+respuestas.ToString();
         }
         else if (tiempo.text == "" && velocidadfinal.text != "" && velocidadinicial.text != "" && graveda.text != "")
         {
@@ -90,7 +99,8 @@ public class expoandes : MonoBehaviour
             float velocidadi = float.Parse(velocidadinicial.text);
             float gravedad = float.Parse(graveda.text);
             float respuestas = (velocidadf - velocidadi) / gravedad;
-            respuesta.text = respuestas.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:(Vf-Vi)/g";
+            respuesta.text = "tiempo= "+respuestas.ToString();
         }
         else if (posiciony.text == "" && velocidadinicial.text != "" && tiempo.text != "" && graveda.text != "")
         {
@@ -98,7 +108,8 @@ public class expoandes : MonoBehaviour
             float tie = float.Parse(tiempo.text);
             float grav = float.Parse(graveda.text);
             double respuestas = (vi * tie) + (((1 / 2) * grav) * Math.Pow(tie, 2));
-            respuesta.text = respuestas.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:(Vi*t)+(((1/2)*g)*t^2)";
+            respuesta.text = "posicion en y= "+respuestas.ToString();
 
         }
         else if (graveda.text == "" && posiciony.text != "" && velocidadinicial.text != "" && tiempo.text != "")
@@ -107,7 +118,8 @@ public class expoandes : MonoBehaviour
             float vi = float.Parse(velocidadinicial.text);
             float tie = float.Parse(tiempo.text);
             double respuestas = (2 * (y - (vi * tie))) / Math.Pow(tie, 2);
-            respuesta.text = respuestas.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:(2*(y-(Vi*t)))/t^2";
+            respuesta.text = "gravedad= "+respuestas.ToString();
 
         }
         else if (posiciony.text != "" && velocidadfinal.text != "" && velocidadinicial.text != "" && graveda.text != "")
@@ -116,7 +128,8 @@ public class expoandes : MonoBehaviour
             float vf = float.Parse(velocidadfinal.text);
             float gra = float.Parse(graveda.text);
             double respuestas = (Math.Pow(vf, 2) - Math.Pow(vi, 2)) / (2 * gra);
-            respuesta.text = respuestas.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:(Vf^2-Vi^2)(2*g)";
+            respuesta.text = "posicion en y"+ respuestas.ToString();
 
         }
         else if (graveda.text == "" && velocidadfinal.text != "" && velocidadinicial.text != "" && posiciony.text != "")
@@ -125,7 +138,8 @@ public class expoandes : MonoBehaviour
             float vi = float.Parse(velocidadinicial.text);
             float y = float.Parse(posiciony.text);
             double respuestas = (Math.Pow(vf, 2) - Math.Pow(vi, 2)) / (2 * y);
-            respuesta.text = respuestas.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:(Vf^2-Vi^2)/(2*y)";
+            respuesta.text = "gravedad= "+respuestas.ToString();
 
         }
         else if (posiciony.text == "" && velocidadinicial.text != "" && velocidadfinal.text != "" && tiempo.text != "")
@@ -134,7 +148,8 @@ public class expoandes : MonoBehaviour
             float vf = float.Parse(velocidadfinal.text);
             float tie = float.Parse(tiempo.text);
             float respuestas = ((vi + vf) / 2);
-            respuesta.text = respuestas.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:((Vi+Vf)/2)";
+            respuesta.text = "posicion en y= "+respuestas.ToString();
 
         }
         else if (tiempo.text != "" && posiciony.text != "" && velocidadinicial.text != "" && velocidadfinal.text != "")
@@ -143,7 +158,8 @@ public class expoandes : MonoBehaviour
             float vi = float.Parse(velocidadinicial.text);
             float vf = float.Parse(velocidadfinal.text);
             float respuesats = (2 * y) / (vi + vf);
-            respuesta.text = respuesats.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:(2*y)/(Vi+Vf)";
+            respuesta.text ="tiempo= "+ respuesats.ToString();
 
         }
         else if (tiempo.text == "" && velocidadfinal.text != "" && velocidadinicial.text != "" && posiciony.text != "" && graveda.text != "")
@@ -153,7 +169,8 @@ public class expoandes : MonoBehaviour
             float y = float.Parse(posiciony.text);
             float gra = float.Parse(graveda.text);
             float respuestas = (y - vi) / ((1 / 2) *gra);
-            respuesta.text = respuestas.ToString();
+            ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:(y-Vi)/((1/2)*g)";
+            respuesta.text = "tiempo= "+respuestas.ToString();
         } 
 
         else {
