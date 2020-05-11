@@ -12,7 +12,7 @@ public class energia : MonoBehaviour
     public InputField epotencial;
     public InputField ecinetica;
     public InputField masa;
-    public InputField gravedad;
+    public InputField graveda;
     public InputField altura;
     public InputField velocidad;
     public InputField fuerzaroce;
@@ -21,26 +21,26 @@ public class energia : MonoBehaviour
 
     public void energias()
     {
-        if (epotencial.text == "" && masa.text != "" && gravedad.text != "" && altura.text != "")
+        if (epotencial.text == "" && masa.text != "" && graveda.text != "" && altura.text != "")
         {
             float m = float.Parse(masa.text);
-            float g = float.Parse(gravedad.text);
+            float g = float.Parse(graveda.text);
             float a = float.Parse(altura.text);
             float operacion = m * g * a;
             ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:(m)*(g)*(a)";
             respuesta.text = "Energia potencial= " + operacion.ToString();
 
         }
-        else if (masa.text == "" && gravedad.text != "" && epotencial.text != "" && altura.text != "")
+        else if (masa.text == "" && graveda.text != "" && epotencial.text != "" && altura.text != "")
         {
-            float g = float.Parse(gravedad.text);
+            float g = float.Parse(graveda.text);
             float ep = float.Parse(epotencial.text);
             float a = float.Parse(altura.text);
             float operacion = ep / (g * a);
             ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema: ep / (g * a)"; 
             respuesta.text ="masa= "+ operacion.ToString();
         }
-        else if (gravedad.text == "" && masa.text != "" && epotencial.text != "" && altura.text != "")
+        else if (graveda.text == "" && masa.text != "" && epotencial.text != "" && altura.text != "")
         {
             float m = float.Parse(masa.text);
             float ep = float.Parse(epotencial.text);
@@ -49,9 +49,9 @@ public class energia : MonoBehaviour
             ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema: ep/(a*m)";
             respuesta.text ="gravedad= " + operacion.ToString();
         }
-        else if (altura.text == "" && gravedad.text != "" && masa.text != "" && epotencial.text != "")
+        else if (altura.text == "" && graveda.text != "" && masa.text != "" && epotencial.text != "")
         {
-            float g = float.Parse(gravedad.text);
+            float g = float.Parse(graveda.text);
             float m = float.Parse(masa.text);
             float ep = float.Parse(epotencial.text);
             float operacion = ep / (m * g);
