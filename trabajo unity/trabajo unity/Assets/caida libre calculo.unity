@@ -172,7 +172,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fc8bba4550c7de144b30d57e9013815f, type: 2}
+  - {fileID: 2100000, guid: bcf65f11463f6ce43b0d945174499bf5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1101,11 +1101,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respuesta: {fileID: 2046307695}
+  ecuacion: {fileID: 0}
   graveda: {fileID: 732250760}
   velocidadinicial: {fileID: 1374404993}
   velocidadfinal: {fileID: 869309394}
   tiempo: {fileID: 1374755563}
   posiciony: {fileID: 1722783887}
+  epotencial: {fileID: 0}
+  ecinetica: {fileID: 0}
+  masa: {fileID: 0}
+  altura: {fileID: 0}
+  velocidad: {fileID: 0}
+  fuerzaroce: {fileID: 0}
+  fuerzanormal: {fileID: 0}
+  coeficienteroce: {fileID: 0}
 --- !u!4 &853391594
 Transform:
   m_ObjectHideFlags: 0
@@ -1772,13 +1781,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331338124}
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: -5.3, y: 15.7, z: 22.7}
+  m_LocalRotation: {x: -0, y: -0.9998509, z: -0, w: -0.01726836}
+  m_LocalPosition: {x: -6.2, y: 15.7, z: 35.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -181.97899, z: 0}
 --- !u!1 &1351946422
 GameObject:
   m_ObjectHideFlags: 0
@@ -2277,7 +2286,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 906a0ad363a2aa74bb7b6804e8bcd140, type: 2}
+  - {fileID: 2100000, guid: bcf65f11463f6ce43b0d945174499bf5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2510,7 +2519,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 906a0ad363a2aa74bb7b6804e8bcd140, type: 2}
+  - {fileID: 2100000, guid: bcf65f11463f6ce43b0d945174499bf5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
