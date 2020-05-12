@@ -7,6 +7,7 @@ public class creacion : MonoBehaviour
 {
     //Name Input Field
 
+    public GameObject sap;
     public GameObject BolaAcero;
     public GameObject BolaCaucho;
     public GameObject BolaMadera;
@@ -137,7 +138,7 @@ public class creacion : MonoBehaviour
 
             }
         }
-        if (((float.Parse(velocidadZ1.text)) != 0f) && (bola1 == true));
+        if (((float.Parse(velocidadZ1.text)) != 0f));
         {
             GameObject Flecha3_c = Instantiate(Flecha3z);
 
@@ -233,6 +234,7 @@ public class creacion : MonoBehaviour
                 Flecha3_c.transform.Rotate(new Vector3(0f, -90f, 0f));
 
             }
+            Destroy(sap);
         }
     }
 }
