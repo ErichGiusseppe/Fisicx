@@ -119,7 +119,7 @@ public class expoandes : MonoBehaviour
                 {
                     ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:Vf/(g*t)";
                     respuesta.text = "velocidad inicial= " + respuestas.ToString();
-                    velocidadinicial.text = respuestas.ToString;
+                    velocidadinicial.text = respuestas.ToString();
                 }
             }
             else if (velocidadinicial.text == "" && graveda.text != "" && tiempo.text != "" && posiciony.text != "")
@@ -155,13 +155,13 @@ public class expoandes : MonoBehaviour
                 {
                     ecuacion.text = ecuacion.text + ", √(Vf-((2*g)*y)";
                     respuesta.text = respuesta.text + " velocidad inicial= " + respuestas.ToString();
-                    velocidadinicial.text = respuestas.ToString;
+                    velocidadinicial.text = respuestas.ToString();
                 }
                 else
                 {
                     ecuacion.text = "Esta es la ecuacion necesaria para solucionar el problema:√(Vf-((2*g)*y)";
                     respuesta.text = "velocidad inicial= " + respuestas.ToString();
-                    velocidadinicial.text = respuestas.ToString;
+                    velocidadinicial.text = respuestas.ToString();
                 }
 
             }
@@ -264,7 +264,7 @@ public class expoandes : MonoBehaviour
                 if (cuantas_ecuaciones > 1)
                 {
                     ecuacion.text = ecuacion.text + ", (2*(y-(Vi*t)))/t^2";
-                    respuesta.text = respuesta.tex + " gravedad= " + respuestas.ToString();
+                    respuesta.text = respuesta.text + " gravedad= " + respuestas.ToString();
                     graveda.text = respuestas.ToString();
                 }
                 else
