@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -596,6 +596,7 @@ GameObject:
   - component: {fileID: 81668501}
   - component: {fileID: 81668500}
   - component: {fileID: 81668503}
+  - component: {fileID: 81668504}
   m_Layer: 5
   m_Name: InVelY1
   m_TagString: Untagged
@@ -736,6 +737,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &81668504
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81668498}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5698ea3382aa15d48967749fba9001c9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &95630807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,6 +1035,7 @@ GameObject:
   - component: {fileID: 252176595}
   - component: {fileID: 252176594}
   - component: {fileID: 252176597}
+  - component: {fileID: 252176598}
   m_Layer: 5
   m_Name: InPosZ1
   m_TagString: Untagged
@@ -1155,6 +1176,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &252176598
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252176592}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1807ec475f2e45c499793dc0bc317e47, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &253287342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,6 +1286,7 @@ GameObject:
   - component: {fileID: 325314154}
   - component: {fileID: 325314153}
   - component: {fileID: 325314156}
+  - component: {fileID: 325314157}
   m_Layer: 5
   m_Name: 'InVelZ2 '
   m_TagString: Untagged
@@ -1386,6 +1427,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &325314157
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325314151}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 758c211816dfb56429511aaf200d0e94, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &327881981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1555,6 +1615,7 @@ GameObject:
   - component: {fileID: 363520972}
   - component: {fileID: 363520971}
   - component: {fileID: 363520974}
+  - component: {fileID: 363520975}
   m_Layer: 5
   m_Name: InMasa 1
   m_TagString: Untagged
@@ -1695,6 +1756,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &363520975
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363520969}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0adbd126925e15146a8bf8406d5ba3b8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &364236567
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,7 +1827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2454,6 +2534,7 @@ GameObject:
   - component: {fileID: 478593051}
   - component: {fileID: 478593050}
   - component: {fileID: 478593053}
+  - component: {fileID: 478593054}
   m_Layer: 5
   m_Name: Input de la bola
   m_TagString: Untagged
@@ -2594,6 +2675,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &478593054
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478593048}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 16cde7131f36bd24e92c79134c207c6f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &507019559
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,6 +2707,7 @@ GameObject:
   - component: {fileID: 507019562}
   - component: {fileID: 507019561}
   - component: {fileID: 507019564}
+  - component: {fileID: 507019565}
   m_Layer: 5
   m_Name: InVelX1
   m_TagString: Untagged
@@ -2747,6 +2848,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &507019565
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507019559}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0cbb04becd751f449b0e7522ee6204a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &510431477
 GameObject:
   m_ObjectHideFlags: 0
@@ -2826,6 +2946,7 @@ GameObject:
   - component: {fileID: 543304513}
   - component: {fileID: 543304512}
   - component: {fileID: 543304515}
+  - component: {fileID: 543304516}
   m_Layer: 5
   m_Name: InVelY2
   m_TagString: Untagged
@@ -2966,6 +3087,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &543304516
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543304510}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5905037851991243aa045e97739213a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &572198661
 GameObject:
   m_ObjectHideFlags: 0
@@ -3926,6 +4066,7 @@ GameObject:
   - component: {fileID: 895207829}
   - component: {fileID: 895207828}
   - component: {fileID: 895207831}
+  - component: {fileID: 895207832}
   m_Layer: 5
   m_Name: InVelZ1
   m_TagString: Untagged
@@ -4066,6 +4207,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &895207832
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895207826}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac63cd0b61460f84c9b37b2396587266, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &908403055
 GameObject:
   m_ObjectHideFlags: 0
@@ -4079,6 +4239,7 @@ GameObject:
   - component: {fileID: 908403058}
   - component: {fileID: 908403057}
   - component: {fileID: 908403060}
+  - component: {fileID: 908403061}
   m_Layer: 5
   m_Name: InPosX2
   m_TagString: Untagged
@@ -4219,6 +4380,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &908403061
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908403055}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5eed4cb367cdb34db89080a99c71482, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &913196240
 GameObject:
   m_ObjectHideFlags: 0
@@ -4349,7 +4529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4638,7 +4818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4999,7 +5179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5152,6 +5332,7 @@ GameObject:
   - component: {fileID: 1184612191}
   - component: {fileID: 1184612190}
   - component: {fileID: 1184612193}
+  - component: {fileID: 1184612194}
   m_Layer: 5
   m_Name: InPosZ2
   m_TagString: Untagged
@@ -5292,6 +5473,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1184612194
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184612188}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce7a769fd4c33a743b92ca0ac8badfa6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1187002147
 GameObject:
   m_ObjectHideFlags: 0
@@ -5422,7 +5622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5726,7 +5926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5915,7 +6115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6224,6 +6424,7 @@ GameObject:
   - component: {fileID: 1395808983}
   - component: {fileID: 1395808982}
   - component: {fileID: 1395808985}
+  - component: {fileID: 1395808986}
   m_Layer: 5
   m_Name: InPosY1
   m_TagString: Untagged
@@ -6364,6 +6565,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1395808986
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395808980}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f47ad1be8b728ce46b58aec1ae389297, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1405273817
 GameObject:
   m_ObjectHideFlags: 0
@@ -6377,6 +6597,7 @@ GameObject:
   - component: {fileID: 1405273820}
   - component: {fileID: 1405273819}
   - component: {fileID: 1405273822}
+  - component: {fileID: 1405273823}
   m_Layer: 5
   m_Name: InMasa 2
   m_TagString: Untagged
@@ -6517,6 +6738,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1405273823
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405273817}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 34ece47bab6eb9f4b8fe7135145dec8e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1413095051
 GameObject:
   m_ObjectHideFlags: 0
@@ -6647,7 +6887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -7401,6 +7641,7 @@ GameObject:
   - component: {fileID: 1737817686}
   - component: {fileID: 1737817685}
   - component: {fileID: 1737817688}
+  - component: {fileID: 1737817689}
   m_Layer: 5
   m_Name: Inputbola2
   m_TagString: Untagged
@@ -7541,6 +7782,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1737817689
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737817683}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7a603bc0cfae7347a1b5a2b20f2c550, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1737985622
 GameObject:
   m_ObjectHideFlags: 0
@@ -7632,6 +7892,7 @@ GameObject:
   - component: {fileID: 1784730340}
   - component: {fileID: 1784730339}
   - component: {fileID: 1784730342}
+  - component: {fileID: 1784730343}
   m_Layer: 5
   m_Name: InPosY2
   m_TagString: Untagged
@@ -7772,6 +8033,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1784730343
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784730337}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ca87b8a363dbfdd459f111d06bf3d7c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1821660758
 GameObject:
   m_ObjectHideFlags: 0
@@ -8594,7 +8874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -8865,7 +9145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
