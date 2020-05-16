@@ -34,7 +34,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: sap
+    m_ConditionEvent: sop
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5503790665248682581}
@@ -59,7 +59,7 @@ AnimatorController:
   m_Name: respu
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: sap
+  - m_Name: sop
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -114,7 +114,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: sap
+    m_ConditionEvent: sop
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2100002849755836740}
