@@ -6946,6 +6946,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac115dfb68f4604c807d19632773239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1451899585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1451899587}
+  - component: {fileID: 1451899586}
+  m_Layer: 0
+  m_Name: control
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1451899586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451899585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44db2b858d5d3564bb47d2576963cc90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respuesta: {fileID: 0}
+  ecuacion: {fileID: 0}
+  graveda: {fileID: 0}
+  velocidadinicial: {fileID: 0}
+  velocidadfinal: {fileID: 0}
+  tiempo: {fileID: 0}
+  posiciony: {fileID: 0}
+  epotencial: {fileID: 0}
+  ecinetica: {fileID: 0}
+  masa: {fileID: 0}
+  altura: {fileID: 0}
+  velocidad: {fileID: 0}
+  fuerzaroce: {fileID: 0}
+  fuerzanormal: {fileID: 0}
+  coeficienteroce: {fileID: 0}
+--- !u!4 &1451899587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451899585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 427.5, y: 161, z: -469.9861}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1525342785
 GameObject:
   m_ObjectHideFlags: 0
