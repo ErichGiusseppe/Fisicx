@@ -119,6 +119,7 @@ public class creacion : MonoBehaviour
                 Camara1.transform.position = new Vector3(valor_en_X1, valor_en_Y1, valor_en_Z1-30f);
 
 
+
             }
             if ((Bolas.ToLower()) == ("acero"))
             {
